@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Clock Right</string>
+
+    <!--Settings-->
+    <string name="menu_main_settings">settings</string>
+    <string name="menu_settings_done">done</string>
+    <string name="settings_working_hours">Working Hours</string>
+
+    <!--Shared Preferences-->
+    <string name="prefs_settings" translatable="false">tech.pucci.clockright.SETTINGS</string>
+    <string name="prefs_settings_working_hours" translatable="false">working_hours</string>
+
+    <!--Database-->
+    <string name="database_name" translatable="false">clockright.db</string>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="prefs_default_working_hours" type="integer" format="integer">525</item>
+</resources>

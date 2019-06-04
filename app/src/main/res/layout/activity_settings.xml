@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SettingsActivity">
+
+    <TextView
+        android:id="@+id/settings_label_working_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/settings_working_hours"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <EditText
+        android:id="@+id/settings_wk_hours"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_semicolon"
+        app:layout_constraintEnd_toStartOf="@+id/settings_semicolon"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settings_semicolon"
+        tools:text="08" />
+
+    <TextView
+        android:id="@+id/settings_semicolon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=":"
+        app:layout_constraintEnd_toEndOf="@+id/settings_label_working_hours"
+        app:layout_constraintStart_toStartOf="@+id/settings_label_working_hours"
+        app:layout_constraintTop_toBottomOf="@+id/settings_label_working_hours" />
+
+    <EditText
+        android:id="@+id/settings_wk_minutes"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_semicolon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/settings_semicolon"
+        app:layout_constraintTop_toTopOf="@+id/settings_semicolon"
+        tools:text="00" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
